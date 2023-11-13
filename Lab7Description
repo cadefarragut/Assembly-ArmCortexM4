@@ -1,0 +1,19 @@
+(50 points) Using Example 12.1 in the Hohl and Hinds textbook as a guide, perform the following, using read-only data robot_type, scale_factor, and radius and three
+lookup tables orientation, o_angle, and reference.  Assume that each data item is a word-sized unsigned integer.  Store the output(s) in words distance and angle in 
+memory.
+
+If robot_type = 1:	This is an orientation robot.  Load an element with index scale_factor from table orientation.  Multiply this by radius and store the result in 
+distance. Load an element with index scale_factor from table o_angle, then store this in angle.
+
+If robot_type = 2:	This is a reference robot.  Load an element with index scale_factor from table reference.  Multiply this by radius and store the result in distance.  
+Store –1 in angle.
+
+Else:	Do nothing.
+
+Create your own tables orientation, o_angle, and reference.  Each should contain at least 5 elements. You will be given test data during lab time for which your code 
+must work to receive credit.
+
+When running your code on the test data, determine the execution time of your program as follows.  In the debugger, click on the debug tab and then select Execution 
+Profiling/Show Time.  When you execute the program, the window showing your program will show the execution time of each instruction executed.  
+(If a particular instruction is executed multiple times, then the execution time shown adds up all of those executions.)  Add those times to determine the execution 
+time of your program.  (Ignore the time at the “stop b stop” line.)  Do this for each set of test data.  Include these times in your report.
