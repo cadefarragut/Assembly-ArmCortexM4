@@ -1,0 +1,17 @@
+1) (20 points) Write a program that converts an ASCII text string from memory into all lowercase and stores the output to memory.  The input string can contain 
+uppercase and lowercase letters as well as spaces, punctuation (period, comma, question mark, exclamation point), and decimal digits.  The input string will be 
+null-terminated (that is, end with a 0 byte) and the output string is also to be null-terminated.  (Observe:  a 0 byte is different than the ASCII code for decimal 
+digit 0, which is 0x30.)
+
+Example: Convert the string “IN 2023, faLL stARTs on September 23.” to “in 2023, fall starts on september 23.”.
+
+2) (30 points) Given an ASCII string of exactly 4 decimal digits (‘0’ - ‘9’), convert the decimal number that it represents into its binary equivalent.  
+For example, convert input string “0325” (= 0x30, 0x33, 0x32, 0x35) to binary 101000101 (= 0x145).  Read the input from memory and store the output to memory.
+
+To convert decimal digits (held as binary values) to a binary equivalent using binary multiplication and binary addition, observe that:
+	0325 = 0*1000 + 3*100 + 2*10 + 5
+and also that:
+	0325 = (((0*10) + 3)*10) + 2)*10 + 5  by Horner’s rule.
+
+
+You will be given test strings during lab time, for which your programs should work in order to receive full credit.
