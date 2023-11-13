@@ -1,7 +1,9 @@
 # Assembly-ArmCortexM4
 Write a program of your own to implement the following mathematical operation:
 Y = (A - B) * (C - D).
-You should use ADD, SUB, MUL and MOV instructions (MOV used to load immediate values into registers). Use the following decimal values:  A = 75, B = 20, C = 40, D = 3. You should begin by moving those values into registers, then using those registers to perform the mathematical operations. Make sure that your final result ends up in register r0.
+You should use ADD, SUB, MUL and MOV instructions (MOV used to load immediate values into registers). Use the following decimal values:  
+A = 75, B = 20, C = 40, D = 3. You should begin by moving those values into registers, then using those registers to perform the mathematical operations. 
+Make sure that your final result ends up in register r0.
 
 Examples of how to use these instructions are as follows (you may choose any registers you wish):
 ADD r0, r1, r2		; adds r1 + r2 and puts the result in r0
@@ -9,6 +11,7 @@ SUB r0, r1, r2		; subtracts r1  r2 and puts the result in r0
 MUL r0, r1, r2		; multiplies r1 * r2 and puts the result in r0
 MOV r0, #10		; puts the (binary equivalent of) decimal number 10 into r0
 
-Note:  The MUL instruction has a quirk such that if the first two registers are the same, then building the files will give an error.  For example, MUL r6, r6, r7 will give an error, while MUL r6, r7, r6 works fine.
+Note:  The MUL instruction has a quirk such that if the first two registers are the same, then building the files will give an error.  For example, 
+MUL r6, r6, r7 will give an error, while MUL r6, r7, r6 works fine.
 
 Verify that your code provides the proper output and display to the TA. Take a screenshot showing the location of the proper final value of Y in register r0. 
