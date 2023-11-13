@@ -1,0 +1,26 @@
+1. (10 points) In the assignment on Moodle, you are given a program lab8_part1.s.  This program does the following.  It converts an ASCII string of exactly 4 
+decimal digits into its binary equivalent.
+
+Determine the execution time of this program on an input where the number has 4 significant digits (for example, “5208”), and determine the execution time on an 
+input where the number has just 1 significant digit with 3 leading zeros (for example, “0006”).
+
+
+2. (20 points) Modify the Part 1 program (or write a new program) to try to speed up execution time by ignoring leading zeros in the input.  So, for example, when 
+converting input “0047” to binary, your program will process only the 4 and the 7 to produce the binary equivalent of decimal 47.
+
+Determine the execution time of your program on an input where the number has 4 significant digits (for example, “5208”), and determine the execution time on an input 
+where the number has just 1 significant digit with 3 leading zeros (for example, “0006”).
+
+
+3. (20 points) Write a program to take two decimal numbers given as ASCII strings, black and green, convert them to binary, add them, convert the sum to decimal then 
+to ASCII, storing the result in yellow.  Assume that black and green are ASCII strings of exactly 7 decimal digits each (‘0’ - ‘9’).  Create and call at least three 
+subroutines.
+
+(1) Convert an ASCII string of exactly 7 decimal digits into its binary equivalent.  (You can adapt the code from either Part 1 or Part 2 above.)
+(2) Convert a binary number to decimal.  Store each decimal digit (that is, the binary equivalent of each decimal digit) in a byte array.  For this lab, the result 
+may have up to 8 decimal digits.
+(3) Convert the byte array of decimal digits from Subroutine (2) to a byte array of ASCII equivalents.  Store such that the most significant digit is first.  
+Store a 0 (NULL) in the byte immediately after the last ASCII digit stored in the array.
+
+
+You will be given test data during lab time for which your code must work to receive credit.
