@@ -1,12 +1,15 @@
-1)  (25 points) Convert the following pseudocode into Arm assembly code for the Cortex-M4. Verify mathematically the final value shown in the register you choose. Show the TA your code and execution, which should work properly before the end of lab time. Take advantage of the condition flags when writing your assembly code. HINT: Use the code given to you in the previous lab experiment to see how to perform a loop.
+1)  (25 points) Convert the following pseudocode into Arm assembly code for the Cortex-M4. Verify mathematically the final value shown in the register you choose. 
+Show the TA your code and execution, which should work properly before the end of lab time. Take advantage of the condition flags when writing your assembly code. 
+HINT: Use the code given to you in the previous lab experiment to see how to perform a loop.
 
 s = 3
 for k = 1 to 4
 	s = (s + 3) * k
 
-2) (25 points) CMP is a flag-setting instruction that compares two operands:  one register, and either another register or an immediate value. It then updates the flags accordingly.
+2) (25 points) CMP is a flag-setting instruction that compares two operands:  one register, and either another register or an immediate value. 
+It then updates the flags accordingly.
 
-	Example:	CMP r0, #5	; compare contents of r0 with decimal number 5
+Example:	CMP r0, #5	; compare contents of r0 with decimal number 5
 CMP r0, r1	; compare contents of r0 with contents of r1
 
 For unsigned operands, after executing CMP operand1, operand2:
@@ -14,7 +17,9 @@ For unsigned operands, after executing CMP operand1, operand2:
 * if C = 0, then operand1 < operand2; and 
 * if Z = 1, then operand1 == operand2. 
 
-The BHI instruction is an example of a conditional operation (branch, in this case) that will branch if operand1 > operand2 after a flag setting instruction such as CMP.  It does this by checking if C = 1 and Z = 0.  Similarly, BLO branches if operand1 < operand2 for unsigned integers, and BEQ branches if operand1 == operand2. (Note: You do not have to use branches, you may use any conditional instruction you wish.)
+The BHI instruction is an example of a conditional operation (branch, in this case) that will branch if operand1 > operand2 after a flag setting instruction such 
+as CMP.  It does this by checking if C = 1 and Z = 0.  Similarly, BLO branches if operand1 < operand2 for unsigned integers, and BEQ branches 
+if operand1 == operand2. (Note: You do not have to use branches, you may use any conditional instruction you wish.)
 
  
 Modify your code from part 1 to accommodate the following changed pseudocode:
