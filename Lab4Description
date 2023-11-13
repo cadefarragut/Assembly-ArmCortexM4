@@ -1,0 +1,8 @@
+1) (25 points) Convert part 1 from Lab 3 to take its inputs from memory and store its sums to memory instead of registers.  Declare four words of input data in the same section as your code; they will form an array of four words starting at variable green.  You may use pre-indexed or post-indexed addressing.  Store your final sum into memory in the read-write data section into a word at variable yellow.
+
+2) (25 points) Write a program that will subtract each element of array red from the corresponding element of array blue and store the difference in array gray.  Assume that each array holds six words, and assume that the numbers in the arrays are signed.  That is, implement the following.
+
+for j = 0 to 5
+	gray[j] = blue[j] - red[j]
+
+Your programs should work for test inputs that will be given by your lab TA to receive full credit.
