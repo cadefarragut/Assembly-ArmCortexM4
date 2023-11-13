@@ -24,3 +24,21 @@ else
 
 
 Demonstrate your results to the lab TA.
+
+2) (25 points) Construct a Cortex-M4 assembly program to implement the pseudocode below.  This code is from steps a tag takes to determine its rank in the order 
+that OO is communicating with tags.  Define the following data items in the code area:  PID and array PID_Q.  Define the following data items in the data area:  
+rank and abort.  The value of count can be held in a register.
+
+rank <-- 0
+count <-- 0
+while PID_Q(count) != 0
+	if PID_Q(count) = PID
+		rank <-- count + 1
+	count <-- count + 1
+if rank = 0
+	abort <-- 1
+else
+	abort <-- 0
+
+Demonstrate your results to the lab TA.
+
