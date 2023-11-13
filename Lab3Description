@@ -1,0 +1,21 @@
+1) (25 points) Your inputs are four different word-length numbers that your program will place in registers r1-r4.  Your program will be responsible for adding four bytes that it will extract from registers as follows:  low order byte (bits 0-7) from r4, next byte (bits 8-15) from r3, next byte (bits 16-23) from r2, and high order byte (bits 24-31) from r1.  Place the sum in register r5.  For example, if you are given the following inputs:
+
+r1 = 0x31F1D1B9, r2 =0x9F46452E, r3 = 0x0C82B182, r4 = 0x2A078CE2
+
+then the sum stored in r5 should be sum of the bytes shown in bold above, that is, the sum of 0xE2, 0xB1, 0x46, and 0x31.  This sum is 0x0000020A.
+
+You must display to the TA that your program obtains the correct final sum and be able to explain how your program operates, as well as show its execution.  Your program should work for ANY four word-length numbers given.  You will be given test inputs in the lab by the TA and your program must work on these test inputs in order to receive full credit.
+
+2) (25 points) For part 2, you need to add functionality to your program from part 1. The following pseudocode indicates how it should operate.
+
+r5 = sum as in part 1   // this is part 1
+if (r0 > r5)	// you will have 5 inputs in part 2 instead of 4
+		//   Treat the numbers as unsigned
+	end program
+else
+	r5 = concatenation of high order byte (bits 24-31) from r1, next byte (bits 16-23) from r2, next byte (bits 8-15) from r3, and low order byte (bits 0-7) from r4.
+	end program
+
+For example, using the sample values above for r1, ..., r4, the concatenation placed in r5 would be 0x3146B1E2.
+
+Your program should work for test inputs that will be given by the TA during lab time to receive full credit.
